@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sticky-bar" aria-label="Progress summary">
+  <span class="sticky-title">Leonida Legend</span>
+  <span class="sticky-progress" id="stickyProgress">0 of 55 earned</span>
+  <span class="sticky-fill-wrap"><span id="stickyFill"></span></span>
+</div>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; offline guide</p>
+  <h1>Leonida Legend</h1>
+  <p class="sub">The complete GTA VI trophy guide and tracker: every official trophy with its guide and sources, a roadmap to the Platinum, and a checklist that saves your progress.</p>
+  <div class="progress-wrap" aria-label="Trophy progress">
+    <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p class="progress-grades" id="progressGrades"></p>
+  </div>
+</header>
+
+<main>
+  <section class="panel missable" id="missablePanel" aria-label="Missable trophies">
+    <h2 id="missableTitle">Missable trophies</h2>
+    <p id="missableBody"></p>
+    <p class="source" id="missableSource"></p>
+  </section>
+
+  <section class="panel" aria-label="Roadmap to the Platinum">
+    <h2 id="roadmapTitle">Roadmap to the Platinum</h2>
+    <p class="panel-sub" id="roadmapSubtitle"></p>
+    <ol class="roadmap" id="roadmapList"></ol>
+    <h3>Ground rules</h3>
+    <ul class="rules" id="rulesList"></ul>
+    <p class="source" id="rulesSource"></p>
+  </section>
+
+  <section class="panel controls-panel" aria-label="Tracker controls">
+    <h2>Tracker — all 55 trophies</h2>
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy name, e.g. Shootist" autocomplete="off"></label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="stranger">Strangers</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="robbery">Robbery</option>
+          <option value="exploration">Exploration</option>
+          <option value="cleanup">Cleanup</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+      <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+      <label class="check"><input id="spoiler" type="checkbox"> Spoiler-safe: hide story trophies until earned</label>
+    </div>
+    <div class="controls buttons">
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button">Reset progress</button>
+      <span class="status" id="statusLine" role="status"></span>
+    </div>
+    <p class="count-line" id="countLine"></p>
+  </section>
+
+  <section aria-label="Trophy list">
+    <ul class="trophy-list" id="trophyList"></ul>
+    <p class="empty" id="emptyNote" hidden>No trophies match these filters. Clear the search or change a filter.</p>
+  </section>
+
+  <section class="panel sources-panel" aria-label="Sources">
+    <h2>Sources &amp; notes</h2>
+    <p>Names, descriptions and grades are the official PlayStation list, as mirrored by Exophase and PSNProfiles — the two trackers agree on every name, description and grade. Each guide below is written in our own words for this guide and cites where its facts come from; a cited guide beats an uncited one, however detailed. No Rockstar logo, artwork or game screenshot is used anywhere in this guide: the look is our own.</p>
+    <ul class="sources" id="sourcesList"></ul>
+    <p class="fineprint">Grand Theft Auto VI is unreleased at the time of writing; where no public guide yet confirms a specific step, the guide says so and works from the official description alone. Check the trackers above for the latest confirmations as the community plays the game.</p>
+  </section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
